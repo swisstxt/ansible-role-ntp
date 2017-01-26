@@ -10,7 +10,7 @@ ntp_config_restrict:
 - '127.0.0.1'
 - '::1'
 
-ntp_config_listen: []
+ntp_config_listen: [ 'all' ]
 
 ntp_config_filegen:
 - 'loopstats file loopstats type day enable'
@@ -28,3 +28,4 @@ ntp_config_broadcast: ''
 ntp_config_broadcastclient: ''
 ntp_config_multicastclient: ''
 ntp_config_tinker_panic_enabled: ''
+ntp_config_logfile: '/var/log/ntpd.log'
